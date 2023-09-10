@@ -1,0 +1,48 @@
+.pill {
+  background: var(--token-gd46qwv3t0Mv);
+  width: auto;
+  height: auto;
+  display: inline-flex;
+  flex-direction: row;
+  position: relative;
+  border-radius: 54px;
+  padding: 16px 24px;
+}
+.pill > :global(.__wab_flex-container) {
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-left: calc(0px - 8px);
+  width: calc(100% + 8px);
+}
+.pill > :global(.__wab_flex-container) > *,
+.pill > :global(.__wab_flex-container) > :global(.__wab_slot) > *,
+.pill > :global(.__wab_flex-container) > picture > img,
+.pill > :global(.__wab_flex-container) > :global(.__wab_slot) > picture > img {
+  margin-left: 8px;
+}
+.pillselected {
+  background: var(--token-VJnIAHhTCb55);
+}
+.pillbig {
+  padding: 24px 32px;
+}
+.pill:hover {
+  background: var(--token-k0WhtMtrV-Nr);
+}
+.freeBox {
+  display: flex;
+  position: relative;
+  height: auto;
+}
+.slotTargetChildren {
+  font-family: "Futura";
+  font-size: 16px;
+  color: rgba(0, 0, 0, 1);
+  text-align: center;
+  line-height: 100%;
+  letter-spacing: 0em;
+}
+.slotTargetChildrenbig {
+  font-size: 32px;
+}

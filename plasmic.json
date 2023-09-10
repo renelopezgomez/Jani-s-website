@@ -1,0 +1,171 @@
+{
+  "platform": "react",
+  "code": {
+    "lang": "ts",
+    "scheme": "blackbox",
+    "reactRuntime": "classic"
+  },
+  "style": {
+    "scheme": "css-modules",
+    "defaultStyleCssFilePath": "plasmic/plasmic__default_style.css"
+  },
+  "images": {
+    "scheme": "files",
+    "publicDir": "../../public",
+    "publicUrlPrefix": "/static/"
+  },
+  "tokens": {
+    "scheme": "theo",
+    "tokensFilePath": "plasmic-tokens.theo.json"
+  },
+  "srcDir": "src/components",
+  "defaultPlasmicDir": "./plasmic",
+  "projects": [
+    {
+      "projectId": "5gGUsmDkteQcDm1s3dbX1r",
+      "projectApiToken": "u2s4ALLVGIIgSlP73ToDyHEs23a4UOTIJ7UA9Pc8qGzCm7W8PJTS9Spr8ss7eKYluJfhcm5iHVhhuhbnUg",
+      "projectName": "Jani's website",
+      "version": "latest",
+      "cssFilePath": "plasmic/janis_website/plasmic_janis_website.module.css",
+      "components": [
+        {
+          "id": "DlQ72SJiZmbQ",
+          "name": "Homepage",
+          "type": "managed",
+          "projectId": "5gGUsmDkteQcDm1s3dbX1r",
+          "renderModuleFilePath": "plasmic/janis_website/PlasmicHomepage.tsx",
+          "importSpec": {
+            "modulePath": "Homepage.tsx"
+          },
+          "cssFilePath": "plasmic/janis_website/PlasmicHomepage.module.css",
+          "scheme": "blackbox",
+          "componentType": "page"
+        },
+        {
+          "id": "Ss0T6rPu5VE1",
+          "name": "Tab",
+          "type": "managed",
+          "projectId": "5gGUsmDkteQcDm1s3dbX1r",
+          "renderModuleFilePath": "plasmic/janis_website/PlasmicTab.tsx",
+          "importSpec": {
+            "modulePath": "Tab.tsx"
+          },
+          "cssFilePath": "plasmic/janis_website/PlasmicTab.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
+        },
+        {
+          "id": "vpKpPdjytWKi",
+          "name": "MakeupDescription",
+          "type": "managed",
+          "projectId": "5gGUsmDkteQcDm1s3dbX1r",
+          "renderModuleFilePath": "plasmic/janis_website/PlasmicMakeupDescription.tsx",
+          "importSpec": {
+            "modulePath": "MakeupDescription.tsx"
+          },
+          "cssFilePath": "plasmic/janis_website/PlasmicMakeupDescription.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
+        }
+      ],
+      "icons": [
+        {
+          "id": "WNoiMa20Ezmd",
+          "name": "BxlfacebookIcon",
+          "moduleFilePath": "plasmic/janis_website/icons/PlasmicIcon__Bxlfacebook.tsx"
+        },
+        {
+          "id": "PGVe6aBw36hQ",
+          "name": "AkarIconstwitterFillIcon",
+          "moduleFilePath": "plasmic/janis_website/icons/PlasmicIcon__AkarIconstwitterFill.tsx"
+        },
+        {
+          "id": "jKlhnsafrDZi",
+          "name": "AkarIconsinstagramFillIcon",
+          "moduleFilePath": "plasmic/janis_website/icons/PlasmicIcon__AkarIconsinstagramFill.tsx"
+        },
+        {
+          "id": "7QSd0mx02ktM",
+          "name": "BxlpinterestAltIcon",
+          "moduleFilePath": "plasmic/janis_website/icons/PlasmicIcon__BxlpinterestAlt.tsx"
+        },
+        {
+          "id": "DgSRakHsY7ru",
+          "name": "FrameIcon",
+          "moduleFilePath": "plasmic/janis_website/icons/PlasmicIcon__Frame.tsx"
+        },
+        {
+          "id": "aE73Jkcluef4",
+          "name": "Frame2Icon",
+          "moduleFilePath": "plasmic/janis_website/icons/PlasmicIcon__Frame2.tsx"
+        },
+        {
+          "id": "1Ce72h70RCoB",
+          "name": "LineIcon",
+          "moduleFilePath": "plasmic/janis_website/icons/PlasmicIcon__Line.tsx"
+        },
+        {
+          "id": "2pBtv_yC8Zpj",
+          "name": "Line2Icon",
+          "moduleFilePath": "plasmic/janis_website/icons/PlasmicIcon__Line2.tsx"
+        }
+      ],
+      "images": [
+        {
+          "id": "TDiSxDuPv_bH",
+          "name": "Maquillaje así nomás",
+          "filePath": "plasmic/janis_website/images/maquillajeAsiNomas.jpg"
+        },
+        {
+          "id": "y5yIINB2NRB-",
+          "name": "Maquillaje re pro",
+          "filePath": "plasmic/janis_website/images/maquillajeRePro.jpg"
+        },
+        {
+          "id": "2KFSy3DmaKgL",
+          "name": "Maquillaje el purete",
+          "filePath": "plasmic/janis_website/images/maquillajeElPurete.jpg"
+        },
+        {
+          "id": "BVdNIN5WrxYh",
+          "name": "fill-empty-space-with-a-plain-pink-color-the-same-pink-color-as-the-current-background-no-text-793102853.png",
+          "filePath": "plasmic/janis_website/images/fillEmptySpaceWithAPlainPinkColorTheSamePinkColorAsTheCurrentBackgroundNoText793102853Png.png"
+        },
+        {
+          "id": "vnMiwAYI0gHB",
+          "name": "fill-empty-space-with-a-plain-pink-color-the-same-pink-color-as-the-current-background-no-text-979665987.png",
+          "filePath": "plasmic/janis_website/images/fillEmptySpaceWithAPlainPinkColorTheSamePinkColorAsTheCurrentBackgroundNoText979665987Png.png"
+        }
+      ],
+      "indirect": false,
+      "globalContextsFilePath": "",
+      "codeComponents": [
+        {
+          "id": "8Is0KLDZ4u4i",
+          "name": "PlasmicHead",
+          "displayName": "hostless-plasmic-head",
+          "componentImportPath": "@plasmicapp/react-web"
+        },
+        {
+          "id": "blLYAJYvskBo",
+          "name": "Fetcher",
+          "displayName": "plasmic-data-source-fetcher",
+          "componentImportPath": "@plasmicapp/react-web/lib/data-sources"
+        }
+      ]
+    }
+  ],
+  "globalVariants": {
+    "variantGroups": [
+      {
+        "id": "dpeULLjeGa6Y",
+        "name": "Screen",
+        "projectId": "5gGUsmDkteQcDm1s3dbX1r",
+        "contextFilePath": "plasmic/janis_website/PlasmicGlobalVariant__Screen.tsx"
+      }
+    ]
+  },
+  "wrapPagesWithGlobalContexts": true,
+  "cliVersion": "0.1.308",
+  "$schema": "https://unpkg.com/@plasmicapp/cli@0.1.308/dist/plasmic.schema.json"
+}

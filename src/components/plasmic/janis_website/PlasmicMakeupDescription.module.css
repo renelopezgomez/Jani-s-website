@@ -1,0 +1,67 @@
+.container {
+  background: rgba(189, 54, 119, 1);
+  filter: drop-shadow(0px 0px 0px rgba(0, 0, 0, 0.1))
+    drop-shadow(0px 11px 12.5px rgba(0, 0, 0, 0.1))
+    drop-shadow(0px 46px 23px rgba(0, 0, 0, 0.09))
+    drop-shadow(0px 103px 31px rgba(0, 0, 0, 0.05))
+    drop-shadow(0px 184px 37px rgba(0, 0, 0, 0.009))
+    drop-shadow(0px 287px 40px rgba(0, 0, 0, 0));
+  width: 362px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  padding: 40px 56px;
+}
+.container > :global(.__wab_flex-container) {
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  margin-top: calc(0px - 16px);
+  height: calc(100% + 16px);
+}
+.container > :global(.__wab_flex-container) > *,
+.container > :global(.__wab_flex-container) > :global(.__wab_slot) > *,
+.container > :global(.__wab_flex-container) > picture > img,
+.container
+  > :global(.__wab_flex-container)
+  > :global(.__wab_slot)
+  > picture
+  > img {
+  margin-top: 16px;
+}
+.containermakeupType_social {
+  background: #3c2821;
+}
+.containermakeupType_wedding {
+  background: #c9bbbb;
+}
+.containermobile {
+  width: 240px;
+  padding: 32px;
+}
+.svg {
+  position: relative;
+  object-fit: cover;
+  max-width: 100%;
+  color: #fff;
+  width: 16px;
+  height: 4px;
+  display: block;
+  flex-shrink: 0;
+}
+.freeBox {
+  display: flex;
+  align-self: stretch;
+  position: relative;
+  flex-direction: row;
+  width: 100%;
+  min-width: 0;
+}
+.slotTargetChildren {
+  font-family: "Futura";
+  font-size: 16px;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 1);
+  line-height: 1.1;
+}
