@@ -5,8 +5,15 @@
   display: inline-flex;
   flex-direction: row;
   position: relative;
+  cursor: pointer;
+  transition-property: all;
+  transition-duration: 1s;
+  -webkit-transition-property: all;
+  -webkit-transition-duration: 1s;
   border-radius: 54px;
   padding: 16px 24px;
+  border-width: 1px;
+  border-style: none;
 }
 .pill > :global(.__wab_flex-container) {
   flex-direction: row;
@@ -29,6 +36,9 @@
 }
 .pill:hover {
   background: var(--token-k0WhtMtrV-Nr);
+}
+.pillselected:hover {
+  background: #ddc6c6;
 }
 .freeBox {
   display: flex;
