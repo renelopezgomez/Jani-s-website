@@ -44,9 +44,6 @@ import "@plasmicapp/react-web/lib/plasmic.css";
 import projectcss from "./plasmic_janis_website.module.css"; // plasmic-import: 5gGUsmDkteQcDm1s3dbX1r/projectcss
 import sty from "./PlasmicShowcase.module.css"; // plasmic-import: zjX1ZiAZla8T/css
 
-import LineIcon from "./icons/PlasmicIcon__Line"; // plasmic-import: 1Ce72h70RCoB/icon
-import Line2Icon from "./icons/PlasmicIcon__Line2"; // plasmic-import: 2pBtv_yC8Zpj/icon
-
 createPlasmicElementProxy;
 
 export type PlasmicShowcase__VariantMembers = {
@@ -68,9 +65,7 @@ export type PlasmicShowcase__OverridesType = {
   showcase?: p.Flex<"div">;
   tabs?: p.Flex<"div">;
   images?: p.Flex<typeof Images>;
-  serviceDescriptions?: p.Flex<"div">;
-  maquillajeRePro2?: p.Flex<"div">;
-  maquillajeElPurete2?: p.Flex<"div">;
+  makeupDescription?: p.Flex<typeof MakeupDescription>;
 };
 
 export interface DefaultShowcaseProps {
@@ -491,153 +486,64 @@ function PlasmicShowcase__RenderFunc(props: {
         }
       />
 
-      <div
-        data-plasmic-name={"serviceDescriptions"}
-        data-plasmic-override={overrides.serviceDescriptions}
-        className={classNames(projectcss.all, sty.serviceDescriptions)}
+      <MakeupDescription
+        data-plasmic-name={"makeupDescription"}
+        data-plasmic-override={overrides.makeupDescription}
+        className={classNames("__wab_instance", sty.makeupDescription, {
+          [sty.makeupDescriptionmakeupType_social]: hasVariant(
+            $state,
+            "makeupType",
+            "social"
+          ),
+          [sty.makeupDescriptionmakeupType_wedding]: hasVariant(
+            $state,
+            "makeupType",
+            "wedding"
+          )
+        })}
+        makeupType={
+          hasVariant($state, "makeupType", "wedding")
+            ? "wedding"
+            : hasVariant($state, "makeupType", "social")
+            ? "social"
+            : "express"
+        }
       >
-        <MakeupDescription
+        <div
           className={classNames(
-            "__wab_instance",
-            sty.makeupDescription__gVWjD,
+            projectcss.all,
+            projectcss.__wab_text,
+            sty.text__ccl9L,
             {
-              [sty.makeupDescriptionmakeupType_social__gVWjDvoQrK]: hasVariant(
+              [sty.textmakeupType_social__ccl9LvoQrK]: hasVariant(
                 $state,
                 "makeupType",
                 "social"
               ),
-              [sty.makeupDescriptionmakeupType_wedding__gVWjD2KAvg]: hasVariant(
+              [sty.textmakeupType_wedding__ccl9L2KAvg]: hasVariant(
                 $state,
                 "makeupType",
                 "wedding"
               )
             }
           )}
-          makeupType={
-            hasVariant($state, "makeupType", "wedding") ? "wedding" : "express"
-          }
         >
-          <div
-            className={classNames(
-              projectcss.all,
-              projectcss.__wab_text,
-              sty.text__ccl9L,
-              {
-                [sty.textmakeupType_social__ccl9LvoQrK]: hasVariant(
-                  $state,
-                  "makeupType",
-                  "social"
-                )
-              }
-            )}
-          >
-            {
-              "Limpieza superficial e hidrataci\u00f3n de la piel. Dise\u00f1o de cejas. Correcci\u00f3n de imperfecciones de la piel. Contorno de rostro. Delineado. M\u00e1scara de pesta\u00f1as. Labial."
-            }
-          </div>
-        </MakeupDescription>
-        {(
-          hasVariant($state, "makeupType", "social")
-            ? true
-            : hasVariant(globalVariants, "screen", "tablet")
-            ? true
-            : false
-        ) ? (
-          <MakeupDescription
-            className={classNames(
-              "__wab_instance",
-              sty.makeupDescription__jAtmG,
-              {
-                [sty.makeupDescriptionmakeupType_social__jAtmGvoQrK]:
-                  hasVariant($state, "makeupType", "social")
-              }
-            )}
-            makeupType={"social"}
-          >
-            <div
-              className={classNames(
-                projectcss.all,
-                projectcss.__wab_text,
-                sty.text__ve2BQ
-              )}
-            >
-              {
-                "Limpieza superficial e hidrataci\u00f3n de la piel. Dise\u00f1o de cejas. Correcci\u00f3n de imperfecciones de la piel. Contorno de rostro.\nDelineado. M\u00e1scara de pesta\u00f1as. Labial."
-              }
-            </div>
-          </MakeupDescription>
-        ) : null}
-        <p.Stack
-          as={"div"}
-          data-plasmic-name={"maquillajeRePro2"}
-          data-plasmic-override={overrides.maquillajeRePro2}
-          hasGap={true}
-          className={classNames(projectcss.all, sty.maquillajeRePro2)}
-        >
-          <LineIcon
-            className={classNames(projectcss.all, sty.svg__tTniV)}
-            role={"img"}
-          />
-
-          <div
-            className={classNames(
-              projectcss.all,
-              projectcss.__wab_text,
-              sty.text__gUCfV
-            )}
-          >
-            {
-              "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Diam convallis tempus sed a ornare facilisi ac cursus purus. Elit, montes, in et fermentum a dignissim. Massa purus mauris, lectus imperdiet."
-            }
-          </div>
-        </p.Stack>
-        <p.Stack
-          as={"div"}
-          data-plasmic-name={"maquillajeElPurete2"}
-          data-plasmic-override={overrides.maquillajeElPurete2}
-          hasGap={true}
-          className={classNames(projectcss.all, sty.maquillajeElPurete2)}
-        >
-          <Line2Icon
-            className={classNames(projectcss.all, sty.svg___9Diuu)}
-            role={"img"}
-          />
-
-          <div
-            className={classNames(
-              projectcss.all,
-              projectcss.__wab_text,
-              sty.text__vk5S
-            )}
-          >
-            {
-              "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Diam convallis tempus sed a ornare facilisi ac cursus purus. Elit, montes, in et fermentum a dignissim. Massa purus mauris, lectus imperdiet."
-            }
-          </div>
-        </p.Stack>
-      </div>
+          {hasVariant($state, "makeupType", "wedding")
+            ? "Another description for this other service that the makeup studio will be offering bla bla bla bla, this one is a bit longer so the box will be bigger like this bla bla bla bla bla bla bla bla bla bla"
+            : hasVariant($state, "makeupType", "social")
+            ? "Another description for this other service that the makeup studio will be offering bla bla bla bla"
+            : "Limpieza superficial e hidrataci\u00f3n de la piel. Dise\u00f1o de cejas. Correcci\u00f3n de imperfecciones de la piel. Contorno de rostro. Delineado. M\u00e1scara de pesta\u00f1as. Labial."}
+        </div>
+      </MakeupDescription>
     </p.Stack>
   ) as React.ReactElement | null;
 }
 
 const PlasmicDescendants = {
-  showcase: [
-    "showcase",
-    "tabs",
-    "images",
-    "serviceDescriptions",
-    "maquillajeRePro2",
-    "maquillajeElPurete2"
-  ],
+  showcase: ["showcase", "tabs", "images", "makeupDescription"],
   tabs: ["tabs"],
   images: ["images"],
-  serviceDescriptions: [
-    "serviceDescriptions",
-    "maquillajeRePro2",
-    "maquillajeElPurete2"
-  ],
-  maquillajeRePro2: ["maquillajeRePro2"],
-  maquillajeElPurete2: ["maquillajeElPurete2"]
+  makeupDescription: ["makeupDescription"]
 } as const;
 type NodeNameType = keyof typeof PlasmicDescendants;
 type DescendantsType<T extends NodeNameType> =
@@ -646,9 +552,7 @@ type NodeDefaultElementType = {
   showcase: "div";
   tabs: "div";
   images: typeof Images;
-  serviceDescriptions: "div";
-  maquillajeRePro2: "div";
-  maquillajeElPurete2: "div";
+  makeupDescription: typeof MakeupDescription;
 };
 
 type ReservedPropsType = "variants" | "args" | "overrides";
@@ -713,9 +617,7 @@ export const PlasmicShowcase = Object.assign(
     // Helper components rendering sub-elements
     tabs: makeNodeComponent("tabs"),
     images: makeNodeComponent("images"),
-    serviceDescriptions: makeNodeComponent("serviceDescriptions"),
-    maquillajeRePro2: makeNodeComponent("maquillajeRePro2"),
-    maquillajeElPurete2: makeNodeComponent("maquillajeElPurete2"),
+    makeupDescription: makeNodeComponent("makeupDescription"),
 
     // Metadata about props expected for PlasmicShowcase
     internalVariantProps: PlasmicShowcase__VariantProps,

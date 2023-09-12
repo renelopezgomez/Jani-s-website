@@ -189,6 +189,41 @@ function PlasmicHomepage__RenderFunc(props: {
                   projectcss.__wab_text,
                   sty.text__erwbD
                 )}
+                onClick={async event => {
+                  const $steps = {};
+                  $steps["runInteractionProp"] = true
+                    ? (() => {
+                        const actionArgs = {};
+                        return __wrapUserFunction(
+                          {
+                            type: "InteractionLoc",
+                            actionName: "invokeEventHandler",
+                            interactionUuid: "Ylawagg-0hif",
+                            componentUuid: "DlQ72SJiZmbQ"
+                          },
+                          () =>
+                            (({ eventRef, args }) => {
+                              return eventRef?.(...(args ?? []));
+                            })?.apply(null, [actionArgs]),
+                          actionArgs
+                        );
+                      })()
+                    : undefined;
+                  if (
+                    typeof $steps["runInteractionProp"] === "object" &&
+                    typeof $steps["runInteractionProp"].then === "function"
+                  ) {
+                    $steps["runInteractionProp"] = await __wrapUserPromise(
+                      {
+                        type: "InteractionLoc",
+                        actionName: "invokeEventHandler",
+                        interactionUuid: "Ylawagg-0hif",
+                        componentUuid: "DlQ72SJiZmbQ"
+                      },
+                      $steps["runInteractionProp"]
+                    );
+                  }
+                }}
               >
                 {"Servicios"}
               </div>
